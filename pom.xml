@@ -56,11 +56,11 @@
                 <version>${spring-boot.version}</version>
                 <scope>test</scope>
                 <exclusions>
-			        <exclusion>
-			            <groupId>org.junit.vintage</groupId>
-			            <artifactId>junit-vintage-engine</artifactId>
-			        </exclusion>
-			    </exclusions>
+                    <exclusion>
+                        <groupId>org.junit.vintage</groupId>
+                        <artifactId>junit-vintage-engine</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.assertj</groupId>
@@ -87,6 +87,7 @@
                     <plugin>
                         <groupId>org.springframework.boot</groupId>
                         <artifactId>spring-boot-maven-plugin</artifactId>
+                        <version>2.4.2</version>
                         <configuration>
                             <fork>true</fork>
                             <!-- Layered jars optimizes Docker images -->
@@ -116,6 +117,7 @@
                     <plugin>
                         <groupId>pl.project13.maven</groupId>
                         <artifactId>git-commit-id-plugin</artifactId>
+                        <version>3.0.0</version>
                         <executions>
                             <execution>
                                 <goals>
