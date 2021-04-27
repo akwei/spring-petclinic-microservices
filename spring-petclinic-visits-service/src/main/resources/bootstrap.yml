@@ -1,4 +1,6 @@
 spring:
+  zipkin:
+    enabled: false
   cloud:
     config:
       uri: http://localhost:8888

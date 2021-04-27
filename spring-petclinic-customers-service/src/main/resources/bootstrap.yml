@@ -1,4 +1,11 @@
 spring:
+  zipkin:
+    enabled: false
+  sleuth:
+    enabled: false
+    web:
+      servlet:
+        enabled: false
   cloud:
     config:
       uri: http://localhost:8888
